@@ -12,7 +12,7 @@ const Accordion = ({ titre, content, large, numb }) => {
 
   return (
     
-      <div key={numb} className="accordion" style={{width : {large} ? '70vw' : '40vw'}} >
+      <div key={numb} className="accordion" style={{width : {large} ? '70%' : '40%'}} >
         <div onClick={toggleAccordion} className="accordion-visible">
           <h2>{titre}</h2>
           {toggle && <img src={ChevronUp} alt="chevron down" />}

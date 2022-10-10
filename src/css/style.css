@@ -275,8 +275,13 @@ footer p {
   display: flex;
   margin-top: 30px;
   height: auto;
-  width: 85vw;
-  margin-left: 7.5vw;
+  width: 90%;
+  margin-left: 5%;
+}
+@media screen and (max-width: 450px) {
+  .logement-title {
+    flex-direction: column;
+  }
 }
 .logement-title .title-location {
   display: flex;
@@ -290,11 +295,21 @@ footer p {
   font-size: 36px;
   font-weight: 500;
 }
+@media screen and (max-width: 450px) {
+  .logement-title h1 {
+    font-size: 18px;
+  }
+}
 .logement-title h2 {
   color: #FF6060;
   margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
+}
+@media screen and (max-width: 450px) {
+  .logement-title h2 {
+    font-size: 14px;
+  }
 }
 .logement-title .host-rate {
   display: flex;
@@ -304,22 +319,52 @@ footer p {
   width: 20%;
   height: unset;
 }
+@media screen and (max-width: 450px) {
+  .logement-title .host-rate {
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
 .logement-title .host-rate .host {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .logement-title .host-rate .host {
+    justify-content: flex-end;
+  }
 }
 .logement-title .host-rate .host .host-name {
   color: #FF6060;
   font-size: 18px;
   margin-right: 10px;
 }
+@media screen and (max-width: 450px) {
+  .logement-title .host-rate .host .host-name {
+    width: 40%;
+    font-size: 12px;
+  }
+}
 .logement-title .host-rate .host .host-picture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
+@media screen and (max-width: 450px) {
+  .logement-title .host-rate .host .host-picture {
+    width: 32px;
+    height: 32px;
+  }
+}
 .logement-title .host-rate .rating {
   display: flex;
+}
+@media screen and (max-width: 450px) {
+  .logement-title .host-rate .rating img {
+    width: 20px;
+  }
 }
 
 .tag {
@@ -337,26 +382,37 @@ footer p {
   font-size: 14px;
   margin-top: 20px;
 }
-
-.main-about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95vw;
+@media screen and (max-width: 450px) {
+  .tag button {
+    font-size: 10px;
+    padding: 0 10px;
+  }
 }
 
 .accordion-bloc {
   display: flex;
   justify-content: space-between;
-  width: 85vw;
-  margin-left: 7.5vw;
+  width: 85%;
+  margin-left: 7.5%;
   margin-top: 50px;
   gap: 20px;
+}
+@media screen and (max-width: 450px) {
+  .accordion-bloc {
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2.5%;
+  }
 }
 
 .accordion {
   height: auto;
   border-radius: 3px;
+}
+@media screen and (max-width: 450px) {
+  .accordion {
+    width: 100% !important;
+  }
 }
 .accordion .accordion-visible {
   box-shadow: 4px 1px 10px 0px #FF6060;
@@ -371,6 +427,16 @@ footer p {
 }
 .accordion .accordion-visible h2 {
   font-size: 18px;
+}
+@media screen and (max-width: 450px) {
+  .accordion .accordion-visible h2 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .accordion .accordion-visible img {
+    width: 9px;
+  }
 }
 .accordion .accordion-toggle {
   box-shadow: 4px 1px 10px 0px #FF6060;
@@ -393,23 +459,22 @@ footer p {
   list-style: none;
 }
 
-@media screen and (max-width: 450px) {
-  .accordion-about .accordion {
-    width: 95vw !important;
-  }
-}
-
 .slides-container {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 40vh;
+}
+@media screen and (max-width: 450px) {
+  .slides-container {
+    height: 25vh;
+  }
 }
 .slides-container .slider {
   position: relative;
-  width: 85vw;
+  width: 90%;
   height: 100%;
   overflow: hidden;
   border-radius: 25px;
@@ -458,9 +523,19 @@ footer p {
   top: 40%;
   left: 32px;
 }
+@media screen and (max-width: 450px) {
+  .slides-container .slider .prev img {
+    width: 25px;
+  }
+}
 .slides-container .slider .next {
   top: 40%;
   right: 32px;
+}
+@media screen and (max-width: 450px) {
+  .slides-container .slider .next img {
+    width: 25px;
+  }
 }
 
 *, ::before, ::after {
@@ -503,13 +578,26 @@ body {
   font-weight: 900;
 }
 
-.accordion-about {
+.main-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.main-about .accordion-about {
   margin-top: 50px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
+}
+@media screen and (max-width: 450px) {
+  .main-about .accordion-about {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

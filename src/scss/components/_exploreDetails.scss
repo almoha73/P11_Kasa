@@ -5,9 +5,12 @@
   display: flex;
   margin-top: 30px;
   height: auto;
-  width: 85vw;
-  margin-left: 7.5vw;
-
+  width: 90%;
+  margin-left: 5%;
+  @media screen and (max-width: 450px){
+    flex-direction: column;
+    
+  }
   .title-location {
     display: flex;
     flex-direction: column;
@@ -18,15 +21,20 @@
 
   h1 {
     color: abstracts.$color-primary;
-
     font-size: 36px;
     font-weight: 500;
+    @media screen and (max-width: 450px){
+      font-size: 18px;
+    }
   }
   h2 {
     color: abstracts.$color-primary;
     margin-top: 10px;
     font-size: 18px;
     font-weight: 500;
+    @media screen and (max-width: 450px){
+      font-size: 14px;
+    }
   }
   .host-rate {
     display: flex;
@@ -35,23 +43,45 @@
     align-items: flex-end;
     width: 20%;
     height: unset;
+    @media screen and (max-width: 450px){
+     flex-direction: row-reverse;
+     width: 100%;
+     align-items: center;
+     margin-top: 20px;
+    }
     .host {
       display: flex;
       align-items: center;
+      @media screen and (max-width: 450px){
+        justify-content: flex-end;
+        
+      }
       .host-name {
         color: abstracts.$color-primary;
         font-size: 18px;
         margin-right: 10px;
+        @media screen and (max-width: 450px){
+          width: 40%;
+          font-size: 12px;
+        }
       }
       .host-picture {
         width: 64px;
         height: 64px;
         border-radius: 50%;
+        @media screen and (max-width: 450px){
+          width: 32px;
+          height: 32px;
+        }
       }
     }
     .rating {
       display: flex;
-      
+      img{
+        @media screen and (max-width: 450px){
+          width: 20px;
+        }
+      }
     }
   }
 }

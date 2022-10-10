@@ -1,16 +1,27 @@
 @use "../abstracts";
 
-    .accordion-about {
-      margin-top: 50px;
-      height: auto;
+    
+  
+    .main-about{
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      
-      
+      width: 95%;
+      margin-left: 2.5%;
+      .accordion-about {
+        margin-top: 50px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        @media screen and (max-width: 450px){
+          width: 100%;
+        }
+       
+        
+      }
     }
-  
-
 
 
