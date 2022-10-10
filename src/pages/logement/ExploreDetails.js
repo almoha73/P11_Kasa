@@ -18,8 +18,8 @@ const ExploreDetails = ({ data }) => {
         <Navigation />
         {data
           .filter((task) => task.title.replace(/\s+/g, "").trim() === title)
-          .map((task) => (
-            <>
+          .map((task, index) => (
+            <div key={index}>
               <div className="slides-container" >
                 <Caroussel slides={task.pictures} />
               </div>
@@ -46,7 +46,7 @@ const ExploreDetails = ({ data }) => {
                 <Accordion titre="Description" content={task.description} numb={task.id}/>
                 <Accordion titre="Equipements" content={task.equipments} numb={task.id}/>
               </div>
-            </>
+            </div>
           ))}
         <Footer />
       </>

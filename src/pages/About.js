@@ -12,9 +12,9 @@ const About = ({ dataAbout }) => {
     <Banner noText/>
     <main className="main-about">
       <div className="accordion-about">
-        {dataAbout.map((elt, index) => (
+        {dataAbout.map((elt) => (
           <Accordion
-            key={index}
+            key={elt.id}
             titre={elt.titre}
             content={elt.content}
             large
