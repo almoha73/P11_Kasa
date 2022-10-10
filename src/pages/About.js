@@ -12,14 +12,16 @@ const About = ({ dataAbout }) => {
     <Banner noText/>
     <main className="main-about">
       <div className="accordion-about">
-        {dataAbout.map((elt) => (
-          <Accordion
-            key={elt.id}
-            titre={elt.titre}
-            content={elt.content}
-            large
-          />
-        ))}
+        {dataAbout && (
+          dataAbout.map((elt) => (
+            <Accordion
+              key={elt.id}
+              titre={elt.titre}
+              content={elt.content}
+              large
+            />
+          ))
+        )}
       </div>
 
       
