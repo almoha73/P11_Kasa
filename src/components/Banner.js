@@ -20,6 +20,8 @@ const Banner = ({noText, text}) => {
             
           )
         }
+
+
         
       </div>
     </div>
