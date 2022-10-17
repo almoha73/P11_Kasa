@@ -99,7 +99,7 @@
   position: relative;
   width: 90%;
   margin-left: 5%;
-  height: 233px;
+  height: 223px;
   margin-top: 40px;
 }
 @media screen and (max-width: 900px) {
@@ -162,6 +162,62 @@
   .dark-title .title h1 {
     font-size: 7vw;
     width: 75%;
+  }
+}
+
+.dark-title-about {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  height: 233px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 900px) {
+  .dark-title-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dark-title-about {
+    height: 223px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+}
+.dark-title-about .title {
+  position: absolute;
+  background: linear-gradient(240deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 4px 4px 15px 0px #d5d5d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .dark-title-about .title {
+    justify-content: flex-start;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+.dark-title-about .title img {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 450px) {
+  .dark-title-about .title img {
+    border-radius: 10px;
+    object-fit: cover;
   }
 }
 
