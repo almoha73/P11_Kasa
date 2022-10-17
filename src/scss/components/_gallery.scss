@@ -1,9 +1,9 @@
 @use "../abstracts";
 
 .gallery {
-  width: 85vw;
+  width: 95%;
   height: auto;
-  margin-left: 7.5vw;
+  margin-left: 2.5%;
   margin-top: 57px;
   margin-bottom: 57px;
   padding-top: 56px;
@@ -19,21 +19,25 @@
     margin-bottom: 0;
   }
   @media screen and (max-width: 450px){
-   width: 95vw;
-   margin-left: 0;
+   width: 90%;
+   margin-left: 5%;
+   padding-top: 0;
+   margin-top: 30px;
   }
   .card {
     display: flex;
     flex-wrap: wrap;
-    width: 91%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
     gap: 56px;
-    @media screen and (max-width: 1050px){
-      width: 75vw;
+    @media screen and (max-width: 1210px){
       justify-content: center;
       
+    }
+    @media screen and (max-width: 450px){
+      gap: 30px;
     } 
     
     .oneCard {
@@ -42,12 +46,11 @@
       height: 340px;
       cursor: pointer;
       @media screen and (max-width: 1050px){
-        width: 75vw;
         height: auto;
       }
       @media screen and (max-width: 450px){
-        height: 25vh;
-        width: 90vw;
+        height: 27vh;
+        width: 100%;
       }
       &:hover {
         transform: scale(1.01);

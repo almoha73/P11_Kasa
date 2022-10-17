@@ -9,23 +9,6 @@ const Accordion = ({ titre, content, large, numb }) => {
     setToggle(!toggle);
   };
   
-  let accordionRef = useRef();
-
-  useEffect(() => {
-    let handler = (e) => {
-      if(!accordionRef.current.contains(e.target)){
-        setToggle(false)
-      }
-    
-    };
-    document.addEventListener("mousedown", handler)
-
-    return () =>{
-      document.removeEventListener("mousedown", handler)
-    }
-  })
-  
-
   return (
     
       <div key={numb} className="accordion" style={{width : {large} ? '100%' : '40%'}} >

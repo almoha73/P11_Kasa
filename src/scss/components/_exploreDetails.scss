@@ -5,12 +5,14 @@
   display: flex;
   margin-top: 30px;
   height: auto;
-  width: 90%;
-  margin-left: 5%;
-  @media screen and (max-width: 450px){
+  width: 95%;
+  margin-left: 2.5%;
+  @media screen and (max-width: 600px){
     flex-direction: column;
-    
+    width: 90%;
+    margin-left: 5%;
   }
+ 
   .title-location {
     display: flex;
     flex-direction: column;
@@ -43,11 +45,11 @@
     align-items: flex-end;
     width: 20%;
     height: unset;
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 600px){
      flex-direction: row-reverse;
      width: 100%;
      align-items: center;
-     margin-top: 20px;
+     margin-top: 10px;
     }
     .host {
       display: flex;

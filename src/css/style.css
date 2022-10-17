@@ -3,24 +3,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85vw;
-  margin-left: 7.5vw;
+  width: 90%;
+  margin-left: 5%;
   margin-top: 40px;
+}
+@media screen and (max-width: 600px) {
+  .navigation {
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 900px) {
   .navigation svg {
-    width: 20vw;
+    width: 20%;
   }
 }
 @media screen and (max-width: 450px) {
   .navigation svg {
-    width: 40vw;
-  }
-}
-@media screen and (max-width: 900px) {
-  .navigation {
-    width: 90vw;
-    margin-left: 5vw;
+    width: 40%;
   }
 }
 .navigation ul {
@@ -31,18 +30,18 @@
 }
 @media screen and (max-width: 900px) {
   .navigation ul {
-    width: 30vw;
+    width: 30%;
   }
 }
 @media screen and (max-width: 600px) {
   .navigation ul {
-    width: 40vw;
+    width: 40%;
   }
 }
 @media screen and (max-width: 380px) {
   .navigation ul {
-    width: 42vw;
-    justify-content: space-evenly;
+    width: 42%;
+    justify-content: space-between;
   }
 }
 .navigation ul a {
@@ -98,13 +97,13 @@
 
 .dark-title {
   position: relative;
-  width: 100%;
+  width: 95%;
+  margin-left: 2.5%;
   height: 233px;
   margin-top: 40px;
 }
 @media screen and (max-width: 900px) {
   .dark-title {
-    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +112,10 @@
 }
 @media screen and (max-width: 450px) {
   .dark-title {
-    height: 12vh;
+    height: 13vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
   }
 }
 .dark-title .title {
@@ -121,8 +123,7 @@
   background: linear-gradient(240deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
   border-radius: 25px;
   height: 100%;
-  width: 95vw;
-  margin-left: 2.5vw;
+  width: 100%;
   box-shadow: 4px 4px 15px 0px #d5d5d5;
   display: flex;
   justify-content: center;
@@ -131,6 +132,7 @@
 @media screen and (max-width: 450px) {
   .dark-title .title {
     justify-content: flex-start;
+    border-radius: 10px;
     width: 100%;
   }
 }
@@ -140,6 +142,11 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+@media screen and (max-width: 450px) {
+  .dark-title .title img {
+    border-radius: 10px;
+  }
 }
 .dark-title .title h1 {
   position: inherit;
@@ -152,14 +159,14 @@
 @media screen and (max-width: 450px) {
   .dark-title .title h1 {
     font-size: 7vw;
-    width: 65vw;
+    width: 75%;
   }
 }
 
 .gallery {
-  width: 85vw;
+  width: 95%;
   height: auto;
-  margin-left: 7.5vw;
+  margin-left: 2.5%;
   margin-top: 57px;
   margin-bottom: 57px;
   padding-top: 56px;
@@ -179,23 +186,29 @@
 }
 @media screen and (max-width: 450px) {
   .gallery {
-    width: 95vw;
-    margin-left: 0;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 0;
+    margin-top: 30px;
   }
 }
 .gallery .card {
   display: flex;
   flex-wrap: wrap;
-  width: 91%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
   gap: 56px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1210px) {
   .gallery .card {
-    width: 75vw;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gallery .card {
+    gap: 30px;
   }
 }
 .gallery .card .oneCard {
@@ -206,14 +219,13 @@
 }
 @media screen and (max-width: 1050px) {
   .gallery .card .oneCard {
-    width: 75vw;
     height: auto;
   }
 }
 @media screen and (max-width: 450px) {
   .gallery .card .oneCard {
-    height: 25vh;
-    width: 90vw;
+    height: 27vh;
+    width: 100%;
   }
 }
 .gallery .card .oneCard:hover {
@@ -275,12 +287,14 @@ footer p {
   display: flex;
   margin-top: 30px;
   height: auto;
-  width: 90%;
-  margin-left: 5%;
+  width: 95%;
+  margin-left: 2.5%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .logement-title {
     flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
   }
 }
 .logement-title .title-location {
@@ -319,12 +333,12 @@ footer p {
   width: 20%;
   height: unset;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .logement-title .host-rate {
     flex-direction: row-reverse;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 .logement-title .host-rate .host {
@@ -392,16 +406,18 @@ footer p {
 .accordion-bloc {
   display: flex;
   justify-content: space-between;
-  width: 85%;
-  margin-left: 7.5%;
+  width: 95%;
+  margin-left: 2.5%;
   margin-top: 50px;
-  gap: 20px;
+  gap: 76px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .accordion-bloc {
     flex-direction: column;
-    width: 95%;
-    margin-left: 2.5%;
+    width: 90%;
+    margin-left: 5%;
+    gap: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -470,6 +486,7 @@ footer p {
 @media screen and (max-width: 450px) {
   .slides-container {
     height: 25vh;
+    margin-top: 20px;
   }
 }
 .slides-container .slider {

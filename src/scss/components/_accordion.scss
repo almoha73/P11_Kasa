@@ -4,15 +4,17 @@
 .accordion-bloc {
   display: flex;
   justify-content: space-between;
-  width: 85%;
-  margin-left: 7.5%;
+  width: 95%;
+  margin-left: 2.5%;
   margin-top: 50px;
-  gap: 20px;
-  @media screen and (max-width: 450px){
+  gap: 76px;
+  
+  @media screen and (max-width: 600px){
     flex-direction: column;
-    width: 95%;
-    margin-left: 2.5%;
-    
+    width: 90%;
+    margin-left: 5%;
+    gap: 0px;
+    margin-top: 20px;
   }
 }
 
