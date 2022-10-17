@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Banner from "../components/Banner";
-import ExploreContainer from "./logement/ExploreContainer";
+import Gallery from "./logement/Gallery";
 
 
 
@@ -13,7 +13,7 @@ const Home = ({data}) => {
     <main>
       <Navigation />
       <Banner text/>
-      <ExploreContainer data={ data }/>
+      <Gallery data={ data }/>
       <Footer />
     </main>
     

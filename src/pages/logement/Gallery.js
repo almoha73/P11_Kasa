@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/Card"
 
-const ExploreContainer = ({ data }) => {
+const Gallery = ({ data }) => {
   return (
     <div className="gallery">
       <Card data={data} />
@@ -9,4 +9,4 @@ const ExploreContainer = ({ data }) => {
   );
 };
 
-export default ExploreContainer;
+export default Gallery;
