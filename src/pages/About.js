@@ -9,7 +9,7 @@ const About = ({ dataAbout }) => {
   return (
     <div className="page-about">
     <Navigation />
-    <Banner />
+    <Banner noText/>
     <main className="main-about">
       <div className="accordion-about">
         {dataAbout && (

@@ -33,9 +33,9 @@
     width: 30%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .navigation ul {
-    width: 40%;
+    width: 45%;
   }
 }
 @media screen and (max-width: 380px) {
@@ -97,8 +97,8 @@
 
 .dark-title {
   position: relative;
-  width: 95%;
-  margin-left: 2.5%;
+  width: 90%;
+  margin-left: 5%;
   height: 233px;
   margin-top: 40px;
 }
@@ -112,7 +112,7 @@
 }
 @media screen and (max-width: 450px) {
   .dark-title {
-    height: 13vh;
+    height: 111px;
     width: 90%;
     margin-left: 5%;
     margin-top: 10px;
@@ -138,6 +138,7 @@
 }
 .dark-title .title img {
   position: absolute;
+  object-fit: cover;
   border-radius: 25px;
   width: 100%;
   height: 100%;
@@ -146,6 +147,7 @@
 @media screen and (max-width: 450px) {
   .dark-title .title img {
     border-radius: 10px;
+    object-fit: cover;
   }
 }
 .dark-title .title h1 {
@@ -164,11 +166,13 @@
 }
 
 .gallery {
-  width: 95%;
+  width: 90%;
   height: auto;
-  margin-left: 2.5%;
+  margin-left: 5%;
   margin-top: 57px;
   margin-bottom: 57px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 56px;
   padding-bottom: 56px;
   border-radius: 25px;
@@ -188,7 +192,7 @@
   .gallery {
     width: 90%;
     margin-left: 5%;
-    padding-top: 0;
+    padding: 0;
     margin-top: 30px;
   }
 }
@@ -199,7 +203,7 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  gap: 56px;
+  gap: 60px;
 }
 @media screen and (max-width: 1210px) {
   .gallery .card {
@@ -224,7 +228,7 @@
 }
 @media screen and (max-width: 450px) {
   .gallery .card .oneCard {
-    height: 27vh;
+    height: 255px;
     width: 100%;
   }
 }
@@ -287,8 +291,8 @@ footer p {
   display: flex;
   margin-top: 30px;
   height: auto;
-  width: 95%;
-  margin-left: 2.5%;
+  width: 90%;
+  margin-left: 5%;
 }
 @media screen and (max-width: 600px) {
   .logement-title {
@@ -406,8 +410,8 @@ footer p {
 .accordion-bloc {
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  margin-left: 2.5%;
+  width: 90%;
+  margin-left: 5%;
   margin-top: 50px;
   gap: 76px;
 }
@@ -460,7 +464,7 @@ footer p {
   text-align: justify;
   opacity: 0;
   transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
-  margin-bottom: 31px;
+  margin-bottom: 20px;
 }
 .accordion .accordion-toggle.animated {
   opacity: 1;
@@ -485,7 +489,7 @@ footer p {
 }
 @media screen and (max-width: 450px) {
   .slides-container {
-    height: 25vh;
+    height: 255px;
     margin-top: 20px;
   }
 }
@@ -542,7 +546,7 @@ footer p {
 }
 @media screen and (max-width: 450px) {
   .slides-container .slider .prev img {
-    width: 25px;
+    width: 12px;
   }
 }
 .slides-container .slider .next {
@@ -551,7 +555,7 @@ footer p {
 }
 @media screen and (max-width: 450px) {
   .slides-container .slider .next img {
-    width: 25px;
+    width: 12px;
   }
 }
 
@@ -570,6 +574,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  margin-left: 5%;
 }
 .error h1 {
   margin-top: 160px;
@@ -578,17 +584,36 @@ body {
   font-weight: 700;
   color: #FF6060;
 }
+@media screen and (max-width: 450px) {
+  .error h1 {
+    font-size: 96px;
+    margin-bottom: 30px;
+  }
+}
 .error p {
   margin-bottom: 182px;
   font-size: 36px;
   font-weight: 500;
   color: #FF6060;
 }
+@media screen and (max-width: 450px) {
+  .error p {
+    font-size: 18px;
+    width: 73%;
+    text-align: center;
+    margin-bottom: 133px;
+  }
+}
 .error a {
   text-decoration: none;
   color: #FF6060;
   font-weight: 500;
   font-size: 18px;
+}
+@media screen and (max-width: 450px) {
+  .error a {
+    font-size: 14px;
+  }
 }
 .error a:hover {
   text-decoration: underline;
@@ -599,8 +624,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
-  margin-left: 2.5%;
+  width: 90%;
+  margin-left: 5%;
 }
 .main-about .accordion-about {
   margin-top: 50px;
@@ -614,6 +639,7 @@ body {
 @media screen and (max-width: 450px) {
   .main-about .accordion-about {
     width: 100%;
+    margin-top: 20px;
   }
 }
 

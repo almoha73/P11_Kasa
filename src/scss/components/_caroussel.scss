@@ -8,7 +8,7 @@
   width: 100%;
   height: 40vh;
   @media screen and (max-width: 450px){
-    height: 25vh;
+    height: 255px;
     margin-top: 20px;
   }
   .slider {
@@ -35,6 +35,7 @@
           height: 100%;
           border-radius: 25px;
           object-fit: cover;
+          
         }
       }
     }
@@ -62,7 +63,7 @@
       left: 32px;
       @media screen and (max-width: 450px){
         img{
-          width: 25px;
+          width: 12px;
         }
       }
     }
@@ -71,7 +72,7 @@
       right: 32px;
       @media screen and (max-width: 450px){
         img{
-          width: 25px;
+          width: 12px;
         }
       }
     }
