@@ -6,7 +6,7 @@ import Error from "./pages/Error";
 import Api from "./Api/Api";
 import ExploreDetails from "./pages/logement/ExploreDetails";
 
-
+// Ce fichier contient les routes du projet
 
 const App = () => {
   const datas = Api("../logements.json");
