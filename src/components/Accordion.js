@@ -4,10 +4,26 @@ import ChevronUp from "../assets/img/ChevronUp.svg";
 
 const Accordion = ({ titre, content, large, numb }) => {
   const [toggle, setToggle] = useState(false);
-
+  
   const toggleAccordion = () => {
     setToggle(!toggle);
   };
+  
+  let accordionRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if(!accordionRef.current.contains(e.target)){
+        setToggle(false)
+      }
+    
+    };
+    document.addEventListener("mousedown", handler)
+
+    return () =>{
+      document.removeEventListener("mousedown", handler)
+    }
+  })
   
 
   return (
