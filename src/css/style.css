@@ -241,7 +241,7 @@
   .gallery {
     background-color: transparent;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -279,7 +279,7 @@
 }
 @media screen and (max-width: 1050px) {
   .gallery .card .oneCard {
-    height: auto;
+    height: 255px;
   }
 }
 @media screen and (max-width: 450px) {
