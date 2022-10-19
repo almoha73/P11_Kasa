@@ -35,23 +35,21 @@ const Caroussel = ({ slides }) => {
 				</>
 			)}
 
-      <>
-      {slides.map((obj, index) => {
-						return (
-							<div
-								className={index === current ? "slide slide-active" : "slide"}
-								key={index}
-							>
-								{index === current && (
-									<img src={obj} alt="" className="imageSlide" />
-								)}
-							</div>
-						);
-					})}
-      </>
-
+			<>
+				{slides.map((obj, index) => {
+					return (
+						<div
+							className={index === current ? "slide slide-active" : "slide"}
+							key={index}
+						>
+							{index === current && (
+								<img src={obj} alt="" className="imageSlide" />
+							)}
+						</div>
+					);
+				})}
+			</>
 		</div>
-
 	);
 };
 

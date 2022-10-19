@@ -469,6 +469,7 @@ footer p {
   width: 90%;
   margin-left: 5%;
   margin-top: 50px;
+  margin-bottom: 20px;
   gap: 76px;
 }
 @media screen and (max-width: 600px) {
@@ -478,6 +479,11 @@ footer p {
     margin-left: 5%;
     gap: 0px;
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .accordion-bloc {
+    margin-bottom: 10px;
   }
 }
 
@@ -493,6 +499,7 @@ footer p {
 .accordion .accordion-visible {
   box-shadow: 4px 1px 10px 0px #FF6060;
   background-color: #FF6060;
+  height: 54px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -500,6 +507,12 @@ footer p {
   padding: 13px 13px;
   border-radius: 10px;
   color: white;
+}
+@media screen and (max-width: 450px) {
+  .accordion .accordion-visible {
+    height: 30px;
+    border-radius: 5px;
+  }
 }
 .accordion .accordion-visible h2 {
   font-size: 18px;
@@ -521,6 +534,11 @@ footer p {
   opacity: 0;
   transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 450px) {
+  .accordion .accordion-toggle {
+    font-size: 12px;
+  }
 }
 .accordion .accordion-toggle.animated {
   opacity: 1;
@@ -691,11 +709,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 450px) {
   .main-about .accordion-about {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 

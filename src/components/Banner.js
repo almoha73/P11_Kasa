@@ -1,5 +1,4 @@
 import React from "react";
-import MediaQuery from "react-responsive";
 import about from "../assets/img/about.jpg";
 import home from "../assets/img/home.jpg";
 const Banner = ({ text, noText }) => {
