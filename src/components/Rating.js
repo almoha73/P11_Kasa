@@ -3,7 +3,6 @@ import starGrey from '../assets/img/starGrey.svg';
 import starPink from '../assets/img/starPink.svg'
 
 
-
 const Rating = ({rating}) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {

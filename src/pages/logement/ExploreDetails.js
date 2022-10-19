@@ -36,7 +36,7 @@ const ExploreDetails = ({ data }) => {
                     <img
                       className="host-picture"
                       src={task.host.picture}
-                      alt=""
+                      alt={task.host.picture}
                     />
                   </div>
                   <Rating rating={task.rating} />

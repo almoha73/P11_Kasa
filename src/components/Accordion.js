@@ -27,8 +27,8 @@ const Accordion = ({ titre, content, large, numb }) => {
           )}
           {toggle && typeof content === "object" && (
             <ul className="accordion-toggle-text">
-              {content.map((equipement) => (
-                <li key={equipement}>{equipement}</li>
+              {content.map((equipement, index) => (
+                <li key={index}>{equipement}</li>
               ))}
             </ul>
           )}
