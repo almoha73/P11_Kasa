@@ -3,14 +3,14 @@ import {Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
-import Api from "./Api/Api";
+import useApi from "./Api/useApi";
 import ExploreDetails from "./pages/logement/ExploreDetails";
 
 // Ce fichier contient les routes du projet
 
 const App = () => {
-  const datas = Api("../logements.json");
-  const datasAbout = Api("../about.json");
+  const datas = useApi("../logements.json");
+  const datasAbout = useApi("../about.json");
   return (
       <Routes>
         <Route path="/" element={<Home  data={ datas } />} />

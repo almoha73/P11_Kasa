@@ -1,9 +1,11 @@
 import React from "react";
 import about from "../assets/img/about.jpg";
 import home from "../assets/img/home.jpg";
-const Banner = ({ text, noText }) => {
+const Banner = ({text, noText}) => {
+	
 	return (
 		<>
+			
 			{text && (
 				<div className="dark-title">
 					<div className="title">
